@@ -1,52 +1,29 @@
-\# My Computer Vision Journey
+# DVN VISION
 
+**Computer Vision Studio**  
+Self-taught journey from complete beginner → Computer Vision Specialist
 
+---
 
-\*\*Student:\*\* Devin  
+### Phase 1: Professional Image Processor
 
-\*\*Phase 1:\*\* Basic Image Processor
+A clean, high-end web application for image manipulation built with OpenCV and Streamlit.
 
+![DVN Vision Screenshot](screenshots/main.png)
 
+### Features
+- Monochrome conversion
+- Soft Blur
+- Cinematic Edge Detection
+- Premium Sharpen
+- Dramatic Contrast
+- Vintage & Cold Tone
+- High-quality export
 
-\## What I Built
+### Technologies
+- **Python** • **OpenCV** • **Streamlit** • **NumPy** • **Pillow**
 
-\- An interactive web app that can:
-
-&#x20; - Turn photos black \& white
-
-&#x20; - Blur images
-
-&#x20; - Detect edges
-
-&#x20; - Sharpen images
-
-
-
-\## Technologies Used
-
-\- Python
-
-\- OpenCV (Computer Vision library)
-
-\- Streamlit (for the web interface)
-
-
-
-\## How to Run
-
-1\. Open Anaconda Prompt
-
-2\. Go to this folder
-
-3\. Type: `streamlit run phase1/image\_processor.py`
-
-
-
-\## What I Learned
-
-\- How to load images with OpenCV
-
-\- How to change images (grayscale, blur, edges)
-
-\- How to make a simple web app with buttons
-
+### How to Run
+```bash
+conda activate cv_beginner
+streamlit run phase1/image_processor.py
