@@ -1,31 +1,32 @@
 # DVN VISION
 
 **Computer Vision Studio**  
-Minimalist | Cinematic | Technical
+Cinematic • Minimalist • Technical
 
-Self-taught journey from complete beginner → Computer Vision Engineer
+Self-taught journey from complete beginner to aspiring Computer Vision Engineer.
 
 ---
 
-### Phase 1: Professional Image Processor
+### Phase 1: Cinematic Image Processor
 
-A high-end, dark-themed web application for image manipulation and creative editing.
+High-end web application for creative and cinematic image editing.
 
 ![DVN Vision Interface](screenshots/main.png)
 
-### Features
-- Monochrome
-- Soft Blur
-- Cinematic Edge Detection
-- Premium Sharpen
-- Dramatic Contrast
-- Vintage & Cold Tone
-- High-Quality Export
+### Featured Cinematic Effects
+- Anamorphic Lens Flare (bright areas only)
+- Vintage 35mm Film with halation glow
+- Soft Bokeh
+- Cinematic Black Bars
+- Premium Sharpen + Dramatic Contrast
+
+![Anamorphic Flare](screenshots/anamorphic.png)
+![Vintage 35mm Film](screenshots/vintage.png)
 
 ### Tech Stack
-- **Python** • **OpenCV** • **Streamlit** • **NumPy**
+- Python • OpenCV • Streamlit • NumPy
 
-### How to Run
+### How to Run Locally
 ```bash
 conda activate cv_beginner
 streamlit run phase1/image_processor.py
