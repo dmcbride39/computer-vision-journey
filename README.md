@@ -1,27 +1,29 @@
 # DVN VISION
 
 **Computer Vision Studio**  
-Self-taught journey from complete beginner → Computer Vision Specialist
+Minimalist | Cinematic | Technical
+
+Self-taught journey from complete beginner → Computer Vision Engineer
 
 ---
 
 ### Phase 1: Professional Image Processor
 
-A clean, high-end web application for image manipulation built with OpenCV and Streamlit.
+A high-end, dark-themed web application for image manipulation and creative editing.
 
-![DVN Vision Screenshot](screenshots/main.png)
+![DVN Vision Interface](screenshots/main.png)
 
 ### Features
-- Monochrome conversion
+- Monochrome
 - Soft Blur
 - Cinematic Edge Detection
 - Premium Sharpen
 - Dramatic Contrast
 - Vintage & Cold Tone
-- High-quality export
+- High-Quality Export
 
-### Technologies
-- **Python** • **OpenCV** • **Streamlit** • **NumPy** • **Pillow**
+### Tech Stack
+- **Python** • **OpenCV** • **Streamlit** • **NumPy**
 
 ### How to Run
 ```bash
