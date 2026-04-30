@@ -6,7 +6,7 @@ Self-taught journey from complete beginner to building real Computer Vision tool
 
 ---
 
-**🔴 Live Demo:** [Launch DVN VISION App](https://YOUR-LIVE-LINK.streamlit.app)
+**🔴 Live Demo:** [Launch DVN VISION App](https://dvnvision.streamlit.app/)
 
 ---
 
