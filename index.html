@@ -1,56 +1,31 @@
-import streamlit as st
-import cv2
-import numpy as np
-from PIL import Image
-
-st.title("🖼️ Devin’s Image Processor")
-st.write("Upload a photo and try the effects below")
-
-# File uploader
-uploaded_file = st.file_uploader("Choose an image file", type=["jpg", "jpeg", "png"])
-
-if uploaded_file is not None:
-    # Load image
-    image = Image.open(uploaded_file)
-    img_array = np.array(image)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DVN VISION</title>
+    <style>
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #0a0a0a; color: #ffffff; text-align: center; margin: 0; padding: 60px; }
+        h1 { font-size: 4rem; letter-spacing: 8px; margin-bottom: 10px; }
+        .subtitle { font-size: 1.4rem; color: #888; letter-spacing: 4px; }
+        .btn { background: #ffffff; color: black; padding: 18px 40px; font-size: 1.3rem; text-decoration: none; border-radius: 0; display: inline-block; margin-top: 40px; font-weight: bold; }
+        .btn:hover { background: #ffcc00; }
+    </style>
+</head>
+<body>
+    <h1>D V N</h1>
+    <p class="subtitle">VISION — CINEMATIC IMAGE LAB</p>
+    <p style="margin-top: 40px; font-size: 1.3rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+        Professional cinematic image processing tools.<br>
+        Built from scratch as part of my Computer Vision journey.
+    </p>
     
-    # Convert to OpenCV format
-    if len(img_array.shape) == 3:
-        original = cv2.cvtColor(img_array, cv2.COLOR_RGB2BGR)
-    else:
-        original = img_array.copy()
+    <a href="https://dmcbride39-computer-vision-journey.streamlit.app" class="btn" target="_blank">
+        LAUNCH DVN VISION APP →
+    </a>
 
-    st.image(image, caption="Original Image", use_column_width=True)
-
-    st.subheader("Effects")
-
-    col1, col2, col3, col4 = st.columns(4)
-
-    with col1:
-        if st.button("🔲 Black & White"):
-            gray = cv2.cvtColor(original, cv2.COLOR_BGR2GRAY)
-            st.image(gray, caption="Black & White", use_column_width=True, channels="GRAY")
-
-    with col2:
-        if st.button("🌫️ Blur"):
-            blurred = cv2.GaussianBlur(original, (25, 25), 0)
-            st.image(cv2.cvtColor(blurred, cv2.COLOR_BGR2RGB), caption="Blurred Image", use_column_width=True)
-
-    with col3:
-        if st.button("🔍 Edges"):
-            gray = cv2.cvtColor(original, cv2.COLOR_BGR2GRAY)
-            edges = cv2.Canny(gray, 50, 150)
-            st.image(edges, caption="Edge Detection", use_column_width=True, channels="GRAY")
-
-    with col4:
-        if st.button("✨ Sharpen"):
-            kernel = np.array([[-1, -1, -1], 
-                             [-1,  9, -1], 
-                             [-1, -1, -1]])
-            sharpened = cv2.filter2D(original, -1, kernel)
-            st.image(cv2.cvtColor(sharpened, cv2.COLOR_BGR2RGB), caption="Sharpened", use_column_width=True)
-
-    # Extra feature
-    if st.button("📏 Resize to Small"):
-        small = cv2.resize(original, (500, 400))
-        st.image(cv2.cvtColor(small, cv2.COLOR_BGR2RGB), caption="Resized Image", use_column_width=True)
+    <p style="margin-top: 80px; color: #555;">
+        <a href="https://github.com/dmcbride39/computer-vision-journey" style="color: #888;">View Source Code on GitHub</a>
+    </p>
+</body>
+</html>
