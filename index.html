@@ -5,23 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DVN VISION</title>
     <style>
-        body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #0a0a0a; color: #ffffff; text-align: center; margin: 0; padding: 80px 20px; }
-        h1 { font-size: 4.5rem; letter-spacing: 10px; margin-bottom: 10px; }
-        .subtitle { font-size: 1.5rem; color: #aaaaaa; letter-spacing: 5px; margin-bottom: 50px; }
-        .btn { background: #ffffff; color: black; padding: 20px 50px; font-size: 1.4rem; text-decoration: none; font-weight: bold; border-radius: 0; }
-        .btn:hover { background: #ffcc00; }
+        body { 
+            font-family: 'Helvetica Neue', Arial, sans-serif; 
+            background: #0a0a0a; 
+            color: #ffffff; 
+            text-align: center; 
+            margin: 0; 
+            padding: 100px 20px; 
+            line-height: 1.6;
+        }
+        h1 { 
+            font-size: 5rem; 
+            letter-spacing: 12px; 
+            font-weight: 300; 
+            margin-bottom: 10px; 
+        }
+        .subtitle { 
+            font-size: 1.4rem; 
+            color: #aaaaaa; 
+            letter-spacing: 6px; 
+            margin-bottom: 60px; 
+        }
+        .btn { 
+            background: transparent; 
+            color: #ffffff; 
+            border: 2px solid #ffffff; 
+            padding: 18px 50px; 
+            font-size: 1.3rem; 
+            text-decoration: none; 
+            font-weight: 500; 
+            transition: all 0.3s; 
+            margin: 20px;
+        }
+        .btn:hover { 
+            background: #ffffff; 
+            color: black; 
+        }
+        .description {
+            max-width: 700px;
+            margin: 40px auto;
+            font-size: 1.2rem;
+            color: #cccccc;
+        }
     </style>
 </head>
 <body>
     <h1>D V N</h1>
     <p class="subtitle">VISION — CINEMATIC IMAGE LAB</p>
     
-   <a href="https://dvnvision.streamlit.app/" class="btn" target="_blank">
-    LAUNCH DVN VISION →
-</a>
+    <div class="description">
+        Professional cinematic image processing tools.<br>
+        Built from scratch during my Computer Vision journey.
+    </div>
 
-    <p style="margin-top: 60px; color: #666;">
-        <a href="https://github.com/dmcbride39/computer-vision-journey" style="color: #888;">View Source Code</a>
+    <a href="https://dvnvision.streamlit.app/" class="btn" target="_blank">
+        LAUNCH DVN VISION APP
+    </a>
+
+    <p style="margin-top: 80px; color: #555; font-size: 1rem;">
+        <a href="https://github.com/dmcbride39/computer-vision-journey" style="color: #888; text-decoration: none;">
+            View Source Code →
+        </a>
     </p>
 </body>
 </html>
